@@ -1,0 +1,13 @@
+*
+
+!/bin/
+!/config/
+!/docker/
+!/public/
+!/src/
+!/templates/
+!/emails/
+!/translations/
+!/.env
+!/composer.*
+!/symfony.lock

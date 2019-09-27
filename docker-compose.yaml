@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+    app:
+        image: symfony-fullstack_app
+        container_name: app-container
+        volumes:
+            - phpsocket:/var/run/php
+
+    web:
+        image: symfony-fullstack_web
+        container_name: web-container
+        ports:
+            - 8050:80
+        volumes:
+            - phpsocket:/var/run/php
+        depends_on:
+            - app
+
+volumes:
+    phpsocket:
