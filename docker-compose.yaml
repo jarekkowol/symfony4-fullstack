@@ -17,5 +17,12 @@ services:
         depends_on:
             - app
 
+    other_api:
+        image: dotronglong/faker:stable
+        volumes:
+            - ./mock:/app/mocks
+        ports:
+            - 3030:3030
+
 volumes:
     phpsocket:
