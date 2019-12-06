@@ -1,0 +1,11 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/init"
+  },
+  "response": {
+    "body": {
+      "status": "ok"
+    }
+  }
+}
